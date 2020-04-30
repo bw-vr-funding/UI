@@ -1,7 +1,7 @@
 body {
     font-family: @fontFamily4;
     background-color: aqua;
-    background-image: url(../assets/image1.jpg);
+    background-image: url(../assets/image6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -36,10 +36,10 @@ body {
     height: 420px;
     width: 50px;
     z-index: 3;
-    background: #ff6666;
+    background: @bg-color;
     text-align: center;
-    border-right: 1px solid #ffffff;
-    border-left: 1px solid #ffffff;
+    border-right: 1px solid@main-bg;
+    border-left: 1px solid @main-bg;
     margin-bottom: 0;
     float: left;
     overflow: hidden;
@@ -53,8 +53,8 @@ body {
 
 .team-box label:hover,
 .team-box #rad2+.team-box label:hover {
-    background: #e65151;
-    color: white;
+    background: @eastern-blue;
+    color: @main-bg;
     cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ body {
     display: block;
     height: 420px;
     width: 0px;
-    background: white;
+    background: @main-bg;
     opacity: 0;
     overflow-x: hidden;
     float: left;
@@ -80,7 +80,7 @@ body {
     width: 579px;
     display: inline-block;
     float: left;
-    background: #ffffff;
+    background: @main-bg;
     z-index: 1;
 }
 
@@ -90,7 +90,7 @@ body {
     float: right;
     position: absolute;
     margin-top: -36;
-    border: 4px solid white;
+    border: 4px solid @main-bg;
 }
 
 img {
@@ -99,7 +99,7 @@ img {
 
 .team-box .accslide .team-inner {
     width: 960px;
-    background: #ffffff;
+    background: @main-bg;
 }
 
 .team-box input[type="radio"]:checked+label~.accslide {
