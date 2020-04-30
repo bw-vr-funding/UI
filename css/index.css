@@ -215,6 +215,7 @@ header .nav-bar a {
 .product-card .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .product-card .product-card {
   width: 380px;
