@@ -1,19 +1,27 @@
- .product-card {
+ .outer-container {
     margin-top: 20%;
     padding: 30px;
     display: flex;
     background-color: @bg-color;
+
+
 .card {
+    margin: 7%;
     display: flex;
+    flex-direction: row;
     flex-direction: column;
     justify-content: space-between;
 
 }
     .product-card {
-        width: 380px;
+        // width: 380px;
         position: relative;
+        border: 1px solid;
+        border-radius: 10px;
         // box-shadow: 0 2px 7px #858383;
         margin: 50px auto;
+        display: flex;
+        flex-direction: column;
         // background: #838383;
     }
 
@@ -55,7 +63,7 @@
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
-        color: #ccc;
+        color: @eastern-blue;
         margin-bottom: 18px;
     }
 
@@ -129,7 +137,7 @@
     }
 
     body {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        font-family: @fontFamily1;
     }
 
     a {
