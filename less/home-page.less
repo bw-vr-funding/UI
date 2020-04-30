@@ -1,10 +1,12 @@
  .product-card {
     margin-top: 20%;
+    padding: 30px;
     display: flex;
-    // justify-content: space-around;
-    // // align-items: flex-end;
     background-color: @bg-color;
-
+.card {
+    display: flex;
+    flex-direction: column;
+}
     .product-card {
         width: 380px;
         position: relative;
@@ -14,7 +16,7 @@
     }
 
     .badge {
-        position: absolute;
+        position: absolute; 
         left: 0;
         top: 20px;
         text-transform: uppercase;
@@ -42,6 +44,8 @@
     .product-details {
         padding: 30px;
         background-color: @silver;
+        display: flex;
+        flex-direction: column;
     }
 
     .product-category {

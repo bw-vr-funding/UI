@@ -208,8 +208,13 @@ header .nav-bar a {
 }
 .product-card {
   margin-top: 20%;
+  padding: 30px;
   display: flex;
   background-color: #679eb8;
+}
+.product-card .card {
+  display: flex;
+  flex-direction: column;
 }
 .product-card .product-card {
   width: 380px;
@@ -242,6 +247,8 @@ header .nav-bar a {
 .product-card .product-details {
   padding: 30px;
   background-color: #C0C0C0;
+  display: flex;
+  flex-direction: column;
 }
 .product-card .product-category {
   display: block;
