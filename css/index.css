@@ -169,7 +169,7 @@ p {
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #679eb8;
+  background-color: #A9ECFF;
 }
 header {
   margin: 0;
@@ -186,8 +186,8 @@ header #myVideo {
   z-index: -100;
 }
 header h1 {
-  font-family: 'Roboto', sans-serif;
-  color: #17A2B8;
+  font-family: 'Varela Round', sans-serif;
+  color: #FFFFFF;
   margin: 25% auto;
   align-items: center;
   font-size: 15rem;
@@ -198,25 +198,38 @@ header .nav-bar {
   height: 8rem;
   display: flex;
   justify-content: flex-end;
-  justify-content: space-between;
-  background-color: #FFEBCD;
+  background-color: #A9ECFF;
 }
 header .nav-bar a {
-  padding: 10%;
+  padding: 2% 20%;
   font-size: 2.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  color: #17A2B8;
+  text-decoration: none;
+  align-self: flex-start;
 }
-.product-card {
+.outer-container {
   margin-top: 20%;
+  padding: 30px;
   display: flex;
-  background-color: #679eb8;
+  background-color: #A9ECFF;
 }
-.product-card .product-card {
-  width: 380px;
+.outer-container .card {
+  margin: 7%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.outer-container .product-card {
   position: relative;
+  border: 1px solid;
+  border-radius: 10px;
   margin: 50px auto;
+  display: flex;
+  flex-direction: column;
 }
-.product-card .badge {
+.outer-container .badge {
   position: absolute;
   left: 0;
   top: 20px;
@@ -227,7 +240,7 @@ header .nav-bar a {
   color: #fff;
   padding: 3px 10px;
 }
-.product-card .product-thumb {
+.outer-container .product-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,23 +248,25 @@ header .nav-bar a {
   padding: 05px;
   background: #17A2B8;
 }
-.product-card .product-thumb img {
+.outer-container .product-thumb img {
   max-width: 100%;
   max-height: 100%;
 }
-.product-card .product-details {
+.outer-container .product-details {
   padding: 30px;
   background-color: #C0C0C0;
+  display: flex;
+  flex-direction: column;
 }
-.product-card .product-category {
+.outer-container .product-category {
   display: block;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ccc;
+  color: #17A2B8;
   margin-bottom: 18px;
 }
-.product-card .product-details h4 a {
+.outer-container .product-details h4 a {
   font-weight: 500;
   display: block;
   margin-bottom: 18px;
@@ -260,63 +275,169 @@ header .nav-bar a {
   text-decoration: none;
   transition: 0, 3s;
 }
-.product-card .product-details h4 a:hover {
+.outer-container .product-details h4 a:hover {
   color: #17A2B8;
 }
-.product-card .product-details p {
+.outer-container .product-details p {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 18px;
   color: #999;
 }
-.product-card .product-bottom-details {
+.outer-container .product-bottom-details {
   overflow: hidden;
   border-top: 1px solid #eee;
   padding-top: 20px;
 }
-.product-card .product-bottom-details div {
+.outer-container .product-bottom-details div {
   float: left;
   width: 50%;
 }
-.product-card .product-price {
+.outer-container .product-price {
   font-size: 18px;
   color: #17A2B8;
   font-weight: 600;
 }
-.product-card .product-price small {
+.outer-container .product-price small {
   font-size: 80%;
   font-weight: 400;
   text-decoration: line-through;
   display: inline-block;
   margin-right: 5px;
 }
-.product-card .product-links {
+.outer-container .product-links {
   text-align: right;
 }
-.product-card .products-links a {
+.outer-container .products-links a {
   display: inline-block;
   margin-left: 5px;
   color: #e1e1e1;
   transition: 0.3s;
   font-size: 17px;
 }
-.product-card .products-links a:hover {
+.outer-container .products-links a:hover {
   color: #17A2B8;
 }
-.product-card * {
+.outer-container * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.product-card body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.outer-container body {
+  font-family: 'Roboto', sans-serif;
 }
-.product-card a {
+.outer-container a {
   text-decoration: none;
 }
 .footer {
   width: 100%;
   height: 250px;
   background-color: #FFEBCD;
+}
+body {
+  font-family: 'Shrikhand', cursive;
+  background-color: aqua;
+  background-image: url(../assets/image1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.team-box input {
+  position: absolute;
+  display: none;
+}
+.team-box form ul {
+  padding: 0;
+  margin: 0;
+}
+.team-box .team-name {
+  position: relative;
+  display: block;
+  width: 420px;
+  transform: rotate(-90deg);
+  top: 197px;
+  left: -185px;
+  text-align: left;
+  padding-left: 25px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.team-box label {
+  position: relative;
+  display: block;
+  height: 420px;
+  width: 50px;
+  z-index: 3;
+  background: #ff6666;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  margin-bottom: 0;
+  float: left;
+  overflow: hidden;
+  transition: width 1s ease, background 0.5s ease;
+}
+.team-box #rad2 + .team-box label {
+  background: #888;
+  transition: width 1s ease, background 0.5s ease;
+}
+.team-box label:hover,
+.team-box #rad2 + .team-box label:hover {
+  background: #e65151;
+  color: white;
+  cursor: pointer;
+}
+.team-box {
+  position: relative;
+  overflow: hidden;
+  padding: 35px 0;
+}
+.team-box .accslide {
+  display: block;
+  height: 420px;
+  width: 0px;
+  background: white;
+  opacity: 0;
+  overflow-x: hidden;
+  float: left;
+  transition: all 1s ease;
+}
+.team-box .accslide .team-about {
+  padding-left: 40px;
+  width: 579px;
+  display: inline-block;
+  float: left;
+  background: #ffffff;
+  z-index: 1;
+}
+.team-box .accslide .team-img {
+  display: inline-block;
+  width: 355px;
+  float: right;
+  position: absolute;
+  margin-top: -36;
+  border: 4px solid white;
+}
+img {
+  height: 410px;
+}
+.team-box .accslide .team-inner {
+  width: 960px;
+  background: #ffffff;
+}
+.team-box input[type="radio"]:checked + label ~ .accslide {
+  width: 960px;
+  opacity: 1;
+}
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+p {
+  margin-top: 80px;
+}
+btn-danger {
+  padding: 10px 40px;
+  border-radius: 0px;
 }
