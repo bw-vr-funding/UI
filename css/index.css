@@ -270,6 +270,14 @@ header .nav-bar a {
   color: #17A2B8;
   margin-bottom: 18px;
 }
+.outer-container .img2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  width: 100%;
+  z-index: -100;
+}
 .outer-container .product-details h4 a {
   font-weight: 500;
   display: block;
@@ -418,12 +426,12 @@ body {
   overflow: hidden;
   transition: width 1s ease, background 0.5s ease;
 }
-.team-box #rad2 + .team-box label {
+.team-box #rad6 + .team-box label {
   background: #888;
   transition: width 1s ease, background 0.5s ease;
 }
 .team-box label:hover,
-.team-box #rad2 + .team-box label:hover {
+.team-box #rad6 + .team-box label:hover {
   background: #17A2B8;
   color: #FFFFFF;
   cursor: pointer;
